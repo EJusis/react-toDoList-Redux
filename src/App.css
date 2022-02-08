@@ -1,38 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0 30vw;
+    background-color: black;
+    padding: 10px 10px 0 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headerStyle {
+    width: 100%;
+    height: 15vh;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headerStyle input {
+    border: none;
+    height: 40px;
+    width: 70%;
+    padding-left: 10px;
+    font-size: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.headerStyle button {
+    border: none;
+    padding: 13px 40px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.taskListStyle {
+    height: calc(100vh - 19vh);
+    width: 100%;
+    border: 2px solid white;
+    padding: 10px;
+    overflow: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.taskContentStyle {
+    width: 100%;
+    height: 100px;
+    margin: 5px 0;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    justify-content: space-between;
 }
+
+.taskContentStyle h3 {
+    color: white;
+    padding-left: 10px;
+}
+
+.taskContentStyle button {
+    border: none;
+    padding: 13px 40px;
+    background-color: #ef2121;
+    color: black;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 3px;
+}
+
+.taskContentStyle input {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.func {
+    display: flex;
+    align-items: center;
+}
+
